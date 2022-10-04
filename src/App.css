@@ -1,38 +1,89 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --primary-white: #fff;
+  --primary-orange: orange;
+  --primary-red: #ef4035;
+  --primary-orange: orange;
+
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/***************NAVBAR****************/
+.navbar-brand img{
+  max-width: 6rem;
+  border-radius: 50%;
+}
+a.navbar-brand{
+  padding: 0;
+}
+/**************MENU LINKS****************/
+
+.nav-link{
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  letter-spacing: 0.0375rem;
+  text-transform: uppercase;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+a.nav-link.nav-link:active.focus{
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+a.nav-link.nav-link:hover{
+
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+
+/***************HEADER****************/
+
+.header-wrapper{
+  position: relative;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-info h2{
+  color: var(--primary-orange);
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/***************TYPED TAXED****************/
+
+.typed-taxed{
+  font-size: 2rem;
+  color: var(--primary-white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/***************HEADER MAIN OFFER BUTTON****************/
 
-.App-link {
-  color: #61dafb;
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-main-offer:hover{
+  color: var(--primary-orange);
 }
